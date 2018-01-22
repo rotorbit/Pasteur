@@ -15,10 +15,10 @@ namespace Pasteur {
 		Curve(int &index, int &point_index0, int &point_index1);
 
 		Curve(std::array<int, num_points> &point_indices);
-		Curve(int, &index, std::array<int, num_points> &point_indices);
+		Curve(int &index, std::array<int, num_points> &point_indices);
 
-		const unsigned int index &get_index() const;
-		const std::array<int, num_points> point_indices &get_point_indices() const;
+		const unsigned int get_index();
+		const std::array<int, num_points> get_point_indices() const;
 
 		virtual void set_index(unsigned int index);
 		virtual void set_point_indices(std::array<int, num_points> point_indices);
