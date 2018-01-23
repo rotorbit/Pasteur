@@ -7,6 +7,7 @@
 #include <ostream>
 #include <assert.h>
 
+
 namespace Pasteur {
 
 	class Point {
