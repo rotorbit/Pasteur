@@ -12,9 +12,14 @@ namespace Pasteur {
 		Node();
 		virtual ~Node();
 
+		Node(unsigned int index);
+
 	protected:
-		int valence_;
-		std::vector<int> face_indices_;
+		unsigned int index_;
+		unsigned int valence_;
+		std::vector<unsigned int> face_indices_;
+		std::vector<unsigned int> cell_indices_;
+
 	};
 
 }

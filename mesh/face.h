@@ -2,17 +2,21 @@
 #define PASTEUR_FACE_H
 
 #include <array>
+#include <vector>
+
+#include "../geometry/plane.h"
 
 namespace Pasteur {
 
-	class Face {
+	class Face : public Plane {
 	public:
 		Face();
 		virtual ~Face();
 
 	protected:
-		std::array<double, 3> normal_;
-		double area_;
+		unsigned int index_;
+		std::vector<unsigned int> node_indices_;
+		std::vector<unsigned int> edge_indices_;
 	};
 
 }

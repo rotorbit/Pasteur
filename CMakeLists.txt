@@ -9,6 +9,7 @@ add_library(pasteur
 		geometry/geometry.h
 		geometry/point.h	     geometry/point.cpp
 		geometry/line.h			 geometry/line.cpp
+		geometry/plane.cpp       geometry/plane.h
 		
 		mesh/mesh.h
 		mesh/node.h              mesh/node.cpp
@@ -22,11 +23,12 @@ add_executable(bl-mesh.x
 		geometry/geometry.h
 		geometry/point.h	     geometry/point.cpp
 		geometry/line.h			 geometry/line.cpp
+		geometry/plane.cpp       geometry/plane.h
 		
 		mesh/mesh.h
 		mesh/node.h              mesh/node.cpp
 		mesh/edge.h              mesh/edge.cpp
 		mesh/face.h         	 mesh/face.cpp
 		mesh/unstructured-mesh.h mesh/unstructured-mesh.cpp
-		)		
+		)
 		
