@@ -13,10 +13,14 @@ namespace Pasteur {
 		Face();
 		virtual ~Face();
 
+		Face(unsigned int index);
+
 	protected:
+		unsigned int num_nodes_;
 		unsigned int index_;
 		std::vector<unsigned int> node_indices_;
 		std::vector<unsigned int> edge_indices_;
+		std::array<double, 3> normal_;
 	};
 
 }

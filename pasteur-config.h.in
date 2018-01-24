@@ -1,0 +1,11 @@
+#ifndef PASTEUR_CONFIG_H
+#define PASTEUR_CONFIG_H
+
+
+#cmakedefine USE_CPP17
+#cmakedefine USE_MPI
+#cmakedefine USE_CUDA
+
+
+
+#endif
