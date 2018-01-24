@@ -5,7 +5,7 @@
 
 #include "../geometry/point.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 	class Node : public Point {
 	public:

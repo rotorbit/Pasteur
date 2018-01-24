@@ -1,6 +1,6 @@
 #include "node.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 	Node::Node() = default;
 

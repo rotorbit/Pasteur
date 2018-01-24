@@ -1,6 +1,6 @@
 #include "edge.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 
 

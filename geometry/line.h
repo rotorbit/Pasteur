@@ -3,7 +3,7 @@
 
 #include <array>
 
-namespace Pasteur {
+namespace pasteur {
 
 	class Line {
 	public:

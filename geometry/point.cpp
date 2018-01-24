@@ -1,6 +1,6 @@
 #include "../geometry/point.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 
     Point::Point(const std::array<double, 3> &coordinates):

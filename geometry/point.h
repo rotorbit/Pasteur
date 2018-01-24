@@ -8,7 +8,7 @@
 #include <assert.h>
 
 
-namespace Pasteur {
+namespace pasteur {
 
 	class Point {
     public:

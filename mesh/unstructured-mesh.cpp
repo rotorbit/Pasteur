@@ -1,6 +1,6 @@
 #include "unstructured-mesh.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 	UnstructuredMesh::UnstructuredMesh() = default;
 

@@ -8,7 +8,7 @@
 #include "../geometry/line.h"
 #include "../geometry/point.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 	class Edge {
 

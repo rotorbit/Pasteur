@@ -5,7 +5,7 @@
   #include <optional>
 #endif
 
-namespace Pasteur {
+namespace pasteur {
 
 	class Cell {
 	public:

@@ -1,6 +1,6 @@
 #include "../geometry/line.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 	Line::Line() = default;
 

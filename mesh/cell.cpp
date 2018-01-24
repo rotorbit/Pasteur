@@ -1,6 +1,6 @@
 #include "cell.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 	Cell::Cell() {}
 

@@ -6,7 +6,13 @@
 
 #include "../geometry/plane.h"
 
-namespace Pasteur {
+namespace pasteur {
+
+    enum class FaceType {
+		TRIANGLE = 0,
+        QUAD4 = 1,
+		QUAD9 = 2
+	};
 
 	class Face : public Plane {
 	public:
@@ -16,11 +22,11 @@ namespace Pasteur {
 		Face(unsigned int index);
 
 	protected:
-		unsigned int num_nodes_;
-		unsigned int index_;
+
+		unsigned int mesh_index_;
+        FaceType face_type_;
 		std::vector<unsigned int> node_indices_;
 		std::vector<unsigned int> edge_indices_;
-		std::array<double, 3> normal_;
 	};
 
 }

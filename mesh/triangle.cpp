@@ -7,7 +7,7 @@
 
 #include "triangle.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 Triangle::Triangle() {
 	// TODO Auto-generated constructor stub

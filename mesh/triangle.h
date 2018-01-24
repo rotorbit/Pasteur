@@ -3,7 +3,7 @@
 
 #include "face.h"
 
-namespace Pasteur {
+namespace pasteur {
 
 	class Triangle : public Face {
 	public:

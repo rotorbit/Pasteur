@@ -3,16 +3,25 @@
 
 #include <array>
 #include <vector>
+#include <string>
 
-namespace Pasteur {
+namespace pasteur {
 
     class Plane {
+    public:
+    	Plane();
+    	virtual ~Plane();
+
+
 
     protected:
-        unsigned int index_;
         std::vector<int> line_indices_;
         double area_;
         std::vector<int> normal_;
+        std::string physical_group_;
+
+    private:
+        unsigned int geometry_index_;
 
 
     };
