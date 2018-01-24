@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <iostream>
 
 #include "node.h"
 #include "edge.h"
@@ -30,11 +31,15 @@ namespace pasteur {
 		const it_global_faces get_it_global_faces() const;
 		const it_global_cells get_it_global_cells() const;
 
-		void set_input_mesh_format(MeshFormat input_mesh_format);
-		void set_output_mesh_format(MeshFormat output_mesh_format);
+		void set_input_format(MeshFormat input_format);
+		void set_output_format(MeshFormat output_format);
 
-		void set_input_mesh_path(std::string input_mesh_path);
-		void set_output_mesh_path(MeshFormat output_mesh_path);
+		void set_input_path(std::string input_path);
+		void set_output_path(std::string output_path);
+
+		void WriteMesh();
+		void WriteMesh(std::string output_path, MeshFormat output_format);
+
 
 	protected:
 		unsigned int num_global_nodes_;
@@ -48,11 +53,13 @@ namespace pasteur {
 		std::vector<Face> global_faces_;
 		std::vector<Cell> global_cells_;
 
-		std::string input_mesh_path;
-		std::string output_mesh_path;
+		MeshFormat input_format_;
+		MeshFormat output_format_;
 
-		MeshFormat input_mesh_format_;
-		MeshFormat output_mesh_format_;
+		std::string input_path_;
+		std::string output_path_;
+
+
 
 	};
 

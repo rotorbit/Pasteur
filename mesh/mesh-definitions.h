@@ -9,8 +9,6 @@ namespace pasteur {
 		VTK = 2
 	};
 
-
-
 }
 
 
