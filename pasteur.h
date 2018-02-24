@@ -6,6 +6,8 @@
 #include "geometry/geometry.h"
 #include "mesh/mesh.h"
 
+#include "metis.h"
+
 
 
 

@@ -4,7 +4,7 @@
 #include <array>
 #include <vector>
 
-#include "../external/Eigen-3.3.4/Eigen/Dense"
+#include "../lib/Eigen-3.3.4/Eigen/Dense"
 #include "../geometry/line.h"
 #include "../geometry/point.h"
 

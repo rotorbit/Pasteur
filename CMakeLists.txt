@@ -11,7 +11,13 @@ if (USE_CPP17)
 else()
   set(CMAKE_CXX_STANDARD 11)
 endif()
-	
+
+include_directories(lib/Eigen-3.3.4/Eigen)
+include_directories(lib/metis-5.1.0/include)
+include_directories(lib/metis-5.1.0/build/libmetis)
+
+add_subdirectory(lib/metis-5.1.0)
+
 configure_file (
   "${PROJECT_SOURCE_DIR}/pasteur-config.h.in"
   "${PROJECT_SOURCE_DIR}/pasteur-config.h"
@@ -47,3 +53,5 @@ add_executable(bl-mesh.x         boundary-layer-mesh.cpp
 		mesh/cell.h              mesh/cell.cpp
 		mesh/unstructured-mesh.h mesh/unstructured-mesh.cpp
 		)
+
+target_link_libraries(bl-mesh.x metis)

@@ -5,6 +5,8 @@
 #include <string>
 #include <iostream>
 
+#include "../lib/metis-5.1.0/include/metis.h"
+
 #include "node.h"
 #include "edge.h"
 #include "face.h"
@@ -42,6 +44,7 @@ namespace pasteur {
 
 
 	protected:
+
 		unsigned int num_global_nodes_;
 		unsigned int num_global_edges_;
 		unsigned int num_global_faces_;
